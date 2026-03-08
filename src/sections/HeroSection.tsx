@@ -13,7 +13,7 @@ const item = {
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section aria-label="Hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <HeroBackground />
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background" />
@@ -28,8 +28,9 @@ const HeroSection = () => {
         {/* Profile photo placeholder */}
         <motion.div variants={item} className="mb-8 flex justify-center">
           <div className="w-32 h-32 rounded-full gradient-border animate-pulse-glow flex items-center justify-center"
+               role="img" aria-label="Arshad Mahalkari profile avatar"
                style={{ background: "linear-gradient(135deg, rgba(0,245,255,0.1), rgba(139,92,246,0.1))" }}>
-            <span className="font-heading text-4xl font-bold gradient-text">A</span>
+            <span className="font-heading text-4xl font-bold gradient-text" aria-hidden="true">A</span>
           </div>
         </motion.div>
 
