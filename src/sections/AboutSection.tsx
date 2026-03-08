@@ -6,14 +6,14 @@ const AboutSection = () => {
   const personality = ["Curious", "Self-driven", "Builder Mindset", "Community-oriented"];
 
   return (
-    <section id="about" className="section-padding max-w-6xl mx-auto">
+    <section id="about" aria-labelledby="about-heading" className="section-padding max-w-6xl mx-auto">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.7 }}
       >
-        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center">
+        <h2 id="about-heading" className="font-heading text-3xl md:text-4xl font-bold mb-12 text-center">
           About <span className="gradient-text">Me</span>
         </h2>
 
@@ -21,6 +21,7 @@ const AboutSection = () => {
           {/* Left */}
           <div className="flex flex-col items-center text-center">
             <div className="w-40 h-40 rounded-2xl gradient-border mb-4 flex items-center justify-center"
+                 role="img" aria-label="Arshad Mahalkari initials"
                  style={{ background: "linear-gradient(135deg, rgba(0,245,255,0.08), rgba(139,92,246,0.08))" }}>
               <span className="font-heading text-5xl font-bold gradient-text">AM</span>
             </div>
