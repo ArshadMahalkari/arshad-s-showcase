@@ -61,8 +61,8 @@ const HeroSection = () => {
 
         <motion.div variants={item} className="flex gap-5 justify-center">
           {[
-            { icon: <Github size={20} />, href: "#", label: "GitHub" },
-            { icon: <Linkedin size={20} />, href: "#", label: "LinkedIn" },
+            { icon: <Github size={20} />, href: "https://github.com/arshadmahalkari", label: "GitHub" },
+            { icon: <Linkedin size={20} />, href: "https://linkedin.com/in/arshad-mahalkari", label: "LinkedIn" },
             { icon: <Mail size={20} />, href: "mailto:arshadmahalkari@gmail.com", label: "Email" },
           ].map((s) => (
             <a

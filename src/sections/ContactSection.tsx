@@ -52,8 +52,8 @@ const ContactSection = () => {
           <div className="space-y-3">
             {[
               { icon: <Mail size={16} />, text: "arshadmahalkari@gmail.com", href: "mailto:arshadmahalkari@gmail.com" },
-              { icon: <Github size={16} />, text: "GitHub", href: "#" },
-              { icon: <Linkedin size={16} />, text: "LinkedIn", href: "#" },
+              { icon: <Github size={16} />, text: "GitHub", href: "https://github.com/arshadmahalkari" },
+              { icon: <Linkedin size={16} />, text: "LinkedIn", href: "https://linkedin.com/in/arshad-mahalkari" },
               { icon: <MapPin size={16} />, text: "India", href: undefined },
             ].map((item) => (
               <div key={item.text} className="flex items-center gap-3">
